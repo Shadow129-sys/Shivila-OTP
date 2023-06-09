@@ -1,0 +1,155 @@
+.search-results {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 2px;
+}
+
+.search-result {
+  width: 25%;
+  height: auto;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.search-result:hover {
+  transform: translateY(-3px);
+}
+
+.book-now-button {
+  display: inline-block;
+  background-color: #3cb305;
+  color: #fff;
+  font-size: 0.625rem;
+  font-weight: 600;
+  padding: 0.25rem 0.5rem;
+  border: none;
+  margin-left: 120px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.book-now-button:hover {
+  background-color: #e5373a;
+}
+
+.book-now-button:focus {
+  outline: none;
+}
+
+@media (max-width: 768px) {
+  .book-now-button {
+    font-size: 0.5rem;
+  }
+}
+
+.search-result-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 0.25rem;
+  border-radius: 0.25rem;
+}
+
+.search-result-content {
+  color: #333;
+}
+
+.search-result-title {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+.search-result-destination,
+.search-result-price,
+.search-result-rating,
+.search-result-guests,
+.search-result-rooms,
+.search-result-availability {
+  font-size: 0.625rem;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 0.125rem;
+}
+
+.amenities {
+  margin-top: 0.25rem;
+}
+
+.amenities h6 {
+  margin-bottom: 0.25rem;
+}
+
+.amenities ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.amenities li {
+  font-size: 0.5rem;
+  color: #777;
+  margin-bottom: 0.125rem;
+}
+
+.amenities li:before {
+  content: '•';
+  display: inline-block;
+  margin-right: 0.125rem;
+  color: #777;
+}
+
+@media (max-width: 768px) {
+  .search-result {
+    width: 33.33%;
+  }
+}
+
+@media (max-width: 576px) {
+  .search-result {
+    width: 50%;
+  }
+}
+
+@media (prefers-color-scheme: white) {
+  .search-result {
+    background-color: #333;
+    color: #fff;
+    border-color: #555;
+  }
+
+  .search-result-title,
+  .search-result-destination,
+  .search-result-price,
+  .search-result-rating,
+  .search-result-guests,
+  .search-result-rooms,
+  .search-result-availability {
+    color: #fff;
+  }
+
+  .search-result:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+  }
+
+  .amenities li:before {
+    color: #fff;
+  }
+}
+
+.view-details-button {
+  background: linear-gradient(to right, #fc5e43, #ff00b3, hsl(14, 100%, 86%));
+  color: #fff;
+  border: none;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.625rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.view-details-button:hover {
+  background: linear-gradient(to right, #0e0d0c, #72305e, hsl(14, 100%, 86%));
+}

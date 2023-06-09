@@ -1,0 +1,11 @@
+Frontend
+- For the frontend part I tried to keep it as simple as possible.
+- The page build can be found at /signinOTP
+- I tried to add the "Login with OTP" button on the login page, but doing so really messed up the styling, and it would take a long time to fix to css.
+
+Backend
+- /OTPmail gets email address and generater an OTP.
+- /VerifyOTP verifies the OTP and logs the user in.
+- I have used nodemailer to work with email, as of now i have used ethereal email, and haven't used gmail due to authentication reasons, adding 2 to 3 lines to the existing code will also make it work with gmail.
+- Used jwt with an expiry time to store the OTP, so that after a certain amount of time it won't work.
+- Added 'OTP' to the user schema.

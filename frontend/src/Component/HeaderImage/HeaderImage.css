@@ -1,0 +1,86 @@
+/* HeaderImage.css */
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+.city {
+  position: relative;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  justify-content: space-between;
+  object-fit: cover;
+}
+
+.city-name {
+  margin-top: 5px;
+  justify-content: space-between;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  z-index: 1;
+  display: none;
+  min-width: 160px;
+  padding: 4px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 8px;
+  text-decoration: none;
+  color: #333;
+}
+
+.dropdown-menu a:hover {
+  background-color: #ddd;
+}
+
+.city:hover .dropdown-menu {
+  display: block;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 600px) {
+  .city {
+    margin: 10px;
+  }
+  
+  .circle {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .header {
+    justify-content:baseline;
+  }
+  
+  .city {
+    margin: 18px;
+  }
+  
+  .circle {
+    width: 35px;
+    height: 35px;
+  }
+}

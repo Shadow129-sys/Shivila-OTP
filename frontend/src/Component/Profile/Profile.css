@@ -1,0 +1,270 @@
+.profile-container {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.data-label {
+  font-weight: bold;
+}
+
+.images-container {
+  margin-top: 20px;
+}
+
+.profile-loading-image {
+  width: 700px;
+  margin-left: 50px;
+}
+
+.images-container h2 {
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.images-container .user-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 105px;
+  margin-left: 330px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.sign-out-button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-left: 675px;
+  cursor: pointer;
+}
+
+.sign-out-button:hover {
+  background-color: #c82333;
+}
+
+.update-profile-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.update-profile-heading {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.update-profile-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.update-profile-form label {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.update-profile-form input[type="text"],
+.update-profile-form input[type="email"],
+.update-profile-form input[type="file"] {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.update-profile-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.update-profile-buttons button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.update-profile-buttons button[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+}
+
+.update-profile-buttons button[type="button"] {
+  background-color: #ccc;
+  color: black;
+}
+
+.cancel-button {
+  background-color: #ccc;
+  color: black;
+  margin-top: 10px;
+}
+
+.cancel-update button {
+  padding: 10px 20px;
+  background-color: #ec6408;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.nodata {
+  width: 500px;
+}
+
+@media (max-width: 480px) {
+  .profile-container {
+    max-width: 300px;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .data-label {
+    font-weight: bold;
+  }
+  
+  .images-container {
+    margin-top: 40px;
+    margin-left: -250px;
+  }
+  
+  .profile-loading-image {
+    width: 300px;
+    margin-left: 50px;
+  }
+  
+  .images-container h2 {
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
+  
+  .images-container .user-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 105px;
+    margin-left: 330px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+  
+  .sign-out-button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-left: 240px;
+    cursor: pointer;
+  }
+  
+  .sign-out-button:hover {
+    background-color: #c82333;
+  }
+  
+  .update-profile-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .update-profile-heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .update-profile-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .update-profile-form label {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .update-profile-form input[type="text"],
+  .update-profile-form input[type="email"],
+  .update-profile-form input[type="file"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .update-profile-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .update-profile-buttons button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  button[type="submit"] {
+    padding: 8px 1px;
+    margin-left: 210px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 1px;
+    cursor: pointer;
+  }
+  .update-profile-buttons button[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .update-profile-buttons button[type="button"] {
+    background-color: #ccc;
+    color: black;
+  }
+  
+  .cancel-button {
+    background-color: #ccc;
+    color: black;
+    margin-top: 10px;
+  }
+  
+  .cancel-update button {
+    padding: 10px 20px;
+    background-color: #ec6408;
+    color: #000;
+    border: none;
+    border-radius: 1px;
+    cursor: pointer;
+  }
+  
+  .nodata {
+    width: 200px;
+  }
+  
+}
+

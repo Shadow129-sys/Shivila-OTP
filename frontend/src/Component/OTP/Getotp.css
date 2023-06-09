@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+.getotp-box {
+    position: relative;
+    border: 2px solid black;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1rem;
+    margin-top: 2em;
+    height: 20em;
+}
+
+.getotp-box input,
+.getotp-box button {
+    /* border: 2px solid black; */
+}
+
+.getotp-box input {
+    position: relative;
+    font-size: 1em;
+    height: 2.7em;
+    border-radius: 0.3em;
+    padding-inline: 1em;
+    /* background-color: #f7f5f5; */
+    /* box-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.1); */
+    /* font-family: 'Roboto', sans-serif; */
+    /* font-weight: 600; */
+    letter-spacing: 0.05em;
+    border: 2px solid black;
+    /* transition: 0.2s ease; */
+}
+
+.getotp-box input:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.getotp-box .email-input {
+    width: 80%;
+}
+
+.getotp-box .otp-input {
+    font-size: 1em;
+    width: 10em;
+    letter-spacing: 0.5em;
+    text-align: center;
+    padding-right: 0.5em;
+    font-weight: 700;
+    /* border: 2px solid black; */
+}
+
+.getotp-box button {
+    position: relative;
+    transform-origin: center;
+    /* right: 50%; */
+    right: 10%;
+}

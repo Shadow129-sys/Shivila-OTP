@@ -1,0 +1,10 @@
+img {
+    width: 1420px;
+  }
+  
+  @media (max-width: 768px) {
+    img {
+      width: 100%; /* Adjust the width as needed for smaller screens */
+    }
+  }
+  

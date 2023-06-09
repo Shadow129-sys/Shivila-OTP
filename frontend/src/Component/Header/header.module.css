@@ -1,0 +1,167 @@
+
+.nav {
+  background-color: #ebebeb;
+  padding: 10px;
+  display: flex;
+  align-items:flex;
+  justify-content: space-between;
+}
+a {
+  text-decoration: none;
+}
+.logo img {
+  width: 100px;
+  height: auto;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.menu-toggle.active {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* Add this CSS to your existing header.module.css file */
+
+.menu-toggle {
+ 
+  display: none; 
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  position: relative;
+  z-index: 10;
+}
+
+.menu-toggle .hamburger {
+  
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  position: relative;
+  z-index: 1;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.menu-toggle .hamburger:before,
+.menu-toggle .hamburger:after {
+ 
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  transition: transform 0.3s ease-in-out;
+}
+
+.menu-toggle .hamburger:before {
+  top: -8px;
+  background-color: rgb(238, 0, 0);
+}
+
+.menu-toggle .hamburger:after {
+  bottom: -8px;
+  background-color: #ff0000;
+}
+
+.menu-toggle.active .hamburger {
+  background-color: transparent;
+}
+
+.menu-toggle.active .hamburger:before {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.menu-toggle.active .hamburger:after {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+li {
+  margin: 0 10px;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #000000;
+  padding: 8px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f9f9f9;
+  color: #ff0000;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    margin-left: 330px;
+    position: absolute;
+    display:flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  ul {
+    display: none;
+    flex-direction:column-reverse;
+    align-items: flex;
+    padding: 0;
+  }
+
+  ul.show {
+    display: flex;
+  }
+
+  ul li {
+    margin: 10px 9px;
+  }
+
+  ul li a {
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+}
